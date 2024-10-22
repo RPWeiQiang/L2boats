@@ -4,14 +4,14 @@ import Icon from "react-native-vector-icons/FontAwesome6";
 
 const Boats=({title, des, icon_name, poster})=>{
     return (
-        <View style={{ marginTop: 20 }}>
+        <View style={{ marginTop: 20}}>
             <View style={{ flexDirection: 'row', }}>
                 <Icon name={icon_name} size={30} color="#707070" />
                 <Text style={{ color: '#707070', fontSize: 24, fontWeight: 'bold', marginLeft: 10 }}>
                     {title}
                 </Text>
             </View>
-            <Text>
+            <Text style={{ marginTop: 10, marginBottom: 10}}>
                 {des}
             </Text>
             <Image source={poster} style={{width:400,height:500}}/>
