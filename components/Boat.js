@@ -31,6 +31,20 @@ const styles = StyleSheet.create({
     image:{
         width:350,
         height:300,
+    },
+    header:{
+        flex:1,
+        justifyContent:'center',
+        textAlign:'center',
+      fontSize:20,
+      fontWeight:'bold',
+      marginTop:30,
+      marginBottom:10,
+        backgroundColor:'#5d5c5c',
+        color:'white',
+        padding:5,
+        borderTopWidth:1,
+        borderBottomWidth:1,
     }
 
 })
@@ -55,6 +69,9 @@ const Boats=({title, des, icon_name, poster})=>{
 const AllBoats=()=>{
     return(
         <ScrollView>
+            <View >
+                <Text style={styles.header}>GETBOAT- For Sale</Text>
+            </View>
             <Boats title="Sea Ray 500 Sundancer" des="Contoured lines and dramatic styling reveal a refined and powerful presence that will take your breath away." icon_name="sailboat" poster={require('../img/sea_ray.jpg')}/>
             <Boats title="Four Winns Horizon 180" des="A sporty look and refined details truly set the Horizon 180 above all others." icon_name="sailboat" poster={require('../img/four_winns.jpg')}/>
             <Boats title="Flipper 640 ST" des="A modern take on the classic, traditional hardtop and perfect for a family picnic." icon_name="sailboat" poster={require('../img/flipper.jpg')}/>
