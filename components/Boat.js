@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
         paddingTop:40,
         paddingBottom:20,
         margin:10,
+        borderWidth:1,
     },
     title:{
         flex:1,
